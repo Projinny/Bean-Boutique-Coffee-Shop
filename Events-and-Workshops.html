@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event and Workshops</title>
+    <link rel="stylesheet" href="assignment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
+
+<body>
+    <div class="head">
+        <nav class="navbar">
+            <div class="navdiv">
+                <img src="images/Coffeeshop.jpg" alt="coffee shop logo" class="img">
+                <div class="logo">
+                    <a href="assignment.html">Bean Boutique</a>
+                </div>
+                <div class="menu-toggle" id="mobile-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="Home.html" class="linknav">Home</a></li>
+                    <li>
+                        <a href="#"  class="linknav">Products</a>
+                        <ul class="dropdown">
+                            <li><a href="coffeeselection.html" class="linknav">Coffee selection</a></li>
+                            <li><a href="brewingequipment.html"  class="linknav">Brewing Equipment</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="shoppingcart.html"  class="linknav">Shopping Cart</a></li>
+                    <li><a href="#" class="linknav">Events</a></li>
+                     <li><a href="SpecialOffer.html"  class="linknav">Special Offers</a></li>
+                     <li><button class="linkbtn" id="popbtn" onclick="showlogin()">Login</button></li>
+                </ul>
+                
+            </div>
+            
+        </nav>
+    </div>
+    <section class="popup-container" id="login">
+        <div class="center" id="pop">
+            <button class="close-login" onclick="closelogin()">×</button>
+            <h1>Login</h1>
+            <form method="post">
+                <div class="txtfield">
+                    <input type="text" required>
+                    <span></span>
+                    <label>Username</label>
+                </div>
+                <div class="txtfield">
+                    <input type="password" required>
+                    <span></span>
+                    <label>Password</label>
+                </div>
+                <div class="pass">Forgot Password</div>
+                <input type="submit" value="Login">
+                <div class="signup">
+                    Not a member? <a href="#">Signup</a>
+                </div>
+            </form>
+        </div>
+    </section>
+    <img src="images/coffeecolor.jpg" alt="background" class="background">
+    <div class="block"></div>
+    <section class="mainevent">
+        <h3>✨ Upcoming Events & Workshops ✨</h3>
+        <div class="introtext">
+            <p>Join us at Bean Boutique for exciting, hands-on experiences that bring coffee lovers
+                together! Whether you're a beginner or a passionate home barista, there's something brewing just for you.
+            </p>
+        </div>
+        <div class="event">
+            <div class="wrapper swiper">
+                <div class="swiper-wrapper">
+                    <div class="workshop swiper-slide">
+                        <img src="images/event.jpg" alt="event" class="eventimg">
+                        <h4>☕ Coffee Tasting Journey</h4>
+                        <p>Explore the world of flavors in this guided tasting session. Discover how origin, roast, and
+                            brew method affect taste. Includes free samples and a flavor wheel!</p>
+                        <p class="biggertext"><strong>Date:</strong> May 18, 2025 | <strong>Time:</strong> 2PM – 4PM</p>
+                        <a href="register.html" class="register-btn">Register Now</a>
+                        
+
+                    </div>
+                    <div class="workshop swiper-slide">
+                        <img src="images/coffeeslide2.jpg" alt="event" class="eventimg">
+                        <h4>🔧 Brew Like a Pro – Hands-on Workshop</h4>
+                        <p>Learn brewing techniques with pour-over, French press, and espresso machines. Limited slots
+                            available for a hands-on experience with expert guidance.</p>
+                        <p class="biggertext"><strong>Date:</strong> May 24, 2025 | <strong>Time:</strong> 10AM – 12PM</p>
+                        <a href="register.html" class="register-btn">Register Now</a>
+                    </div>
+                    <div class="workshop swiper-slide">
+                        <img src="images/coffeeslide3.jpg" alt="event" class="eventimg">
+                        <h4>👨‍🌾 Meet the Roaster</h4>
+                        <p>Chat with our head roaster and watch a live roasting demo. Discover what goes into each
+                            perfect bean — plus free take-home samples for attendees!</p>
+                        <p class="biggertext"><strong>Date:</strong> June 2, 2025 | <strong>Time:</strong> 5PM – 6PM</p>
+                        <a href="register.html" class="register-btn">Register Now</a>
+                    </div>
+                    <div class="workshop swiper-slide">
+                        <img src="images/mothercoffee.jpeg" alt="event" class="eventimg">
+                        <h4>💐 Mother's Day Coffee Special</h4>
+                        <p>Celebrate Mother's Day with a 20% discount on all coffee products! Plus, get a free gift with
+                            any purchase over $50.</p>
+                        <p class="biggertext"><strong>🗓 May 5th - May 12th, 2025</strong></p>
+                        <a href="register.html" class="register-btn">Register Now</a>
+                    </div>
+                    <div class="workshop swiper-slide">
+                        <img src="images/coffeeslide1.jpg" alt="event" class="eventimg">
+                        <h4>☕ Coffee & Cookie Pairing Session </h4>
+                        <p>Join us for a delightful coffee and cookie pairing experience. Explore the perfect combos of
+                            rich brews and sweet treats!</p>
+                        <p class="biggertext"><strong>🗓 May 15th, 2025 | 2:00 PM - 4:00 PM</strong></p>
+                        <a href="register.html" class="register-btn">Register Now</a>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div id="google_translate_element"></div>
+            <div class="row">
+                <div class="ft_info col-l-4 col-m-4 col-s-11">
+                    <p class="footerText">USEFUL LINKS</p>
+                    <a href="">Blog</a>
+                    <a href="">Shop</a>
+                    <a href="">Services</a>
+                    <a href="">About</a>
+                    <a href="">Contact</a>
+                </div>
+                <div class="ft_info col-l-4 col-m-4 col-s-11">
+                    <p class="footerText">NEWSLETTER</p>
+                    <form class="sub_bar">
+                        <input type="text" placeholder="Your Email Address">
+                        <button type="submit">SUBSCRIBE NOW</button>
+                    </form>
+                </div>
+                <div class="ft_info col-l-4 col-m-4 col-s-11">
+                    <p class="footerText">CONTACT</p>
+                    <p class="footertext">1234 Main Street, City, Country, 56789</p>
+                    <p class="footertext">+1 (234) 567-8900</p>
+                    <p class="footertext">boutidue@gmail.com</p>
+                    <div class="icons">
+                        <a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://facebook.com"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+            </div>
+            </div>  
+    </footer>
+    <div class="last"><p class="footertext">&copy;2025 Bean Boutique Coffee Shop. </p></div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assignment.js"></script>
+    <script>
+
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            grabCursor: true,
+            spaceBetween: 30,
+            // Pagination bullets
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                dynamicBullets: true
+            },
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            // Responsive breakpoints
+            breakpoints: {
+                0: {
+                    slidesPerView: 1
+                },
+                768: {
+                    slidesPerView: 2
+                },
+                1024: {
+                    slidesPerView: 3
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

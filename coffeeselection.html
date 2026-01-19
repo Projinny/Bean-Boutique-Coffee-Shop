@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Selection</title>
+    <link rel="stylesheet" href="assignment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <div class="head">
+        <nav class="navbar">
+            <div class="navdiv">
+                <img src="images/Coffeeshop.jpg" alt="coffee shop logo" class="img">
+                <div class="logo">
+                    <a href="assignment.html">Bean Boutique</a>
+                </div>
+                <div class="menu-toggle" id="mobile-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="Home.html" class="linknav">Home</a></li>
+                    <li>
+                        <a href="#"  class="linknav">Products</a>
+                        <ul class="dropdown">
+                            <li><a href="#" class="linknav">Coffee selection</a></li>
+                            <li><a href="brewingequipment.html"  class="linknav">Brewing Equipment</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="shoppingcart.html"  class="linknav">Shopping Cart</a></li>
+                    <li><a href="Events-and-Workshops.html" class="linknav">Events</a></li>
+                     <li><a href="SpecialOffer.html"  class="linknav">Special Offers</a></li>
+                     <li><button class="linkbtn" id="popbtn" onclick="showlogin()">Login</button></li>
+                </ul>
+                
+            </div>
+            
+        </nav>
+    </div>
+    <section class="popup-container" id="login">
+        <div class="center" id="pop">
+            <button class="close-login" onclick="closelogin()">×</button>
+            <h1>Login</h1>
+            <form method="post">
+                <div class="txtfield">
+                    <input type="text" required>
+                    <span></span>
+                    <label>Username</label>
+                </div>
+                <div class="txtfield">
+                    <input type="password" required>
+                    <span></span>
+                    <label>Password</label>
+                </div>
+                <div class="pass">Forgot Password</div>
+                <input type="submit" value="Login">
+                <div class="signup">
+                    Not a member? <a href="#">Signup</a>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section class="popup-container" id="login">
+        <div class="center" id="pop">
+            <button class="close-login" onclick="closelogin()">×</button>
+            <h1>Login</h1>
+            <form method="post">
+                <div class="txtfield">
+                    <input type="text" required>
+                    <span></span>
+                    <label>Username</label>
+                </div>
+                <div class="txtfield">
+                    <input type="password" required>
+                    <span></span>
+                    <label>Password</label>
+                </div>
+                <div class="pass">Forgot Password</div>
+                <input type="submit" value="Login">
+                <div class="signup">
+                    Not a member? <a href="#">Signup</a>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section>
+        <h2>OUR SIGNATURE DRINKS</h2>
+        <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="search" class="search-bar" placeholder="Search">
+        </div>
+        <div class="homedrink">
+            <div class="blends">
+                <a href="/CoffeeShop/coffeeLinks/drink.html"><img src="images/AmericanoCoffee.jpg" alt="drink" class="singimg"></a>
+                <h5>Americano Coffee</h5>
+                <div class="star1">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p>$3.99</p>
+                <button class="btn3">Add to Cart</button>
+            </div>
+            <div class="blends">
+                <a href="/CoffeeShop/coffeeLinks/drink2.html"><img src="images/Espresso.jpg" alt="drink2" class="singimg"></a>
+                <h5>Espresso</h5>
+                <div class="star1">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p>$2.99</p>
+                <button class="btn3">Add to Cart</button>
+            </div>
+            <div class="blends">
+                <a href="/CoffeeShop/coffeeLinks/drink1.html"><img src="images/IcedAmericano.jpg" alt="drink1" class="singimg"></a>
+                <h5>Iced Americano</h5>
+                <div class="star1">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p>$4.49</p>
+                <button class="btn3">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    
+   <hr>
+   <section class="coffee">
+    <h2>COFFEE SELECTION</h2>
+    
+    <div class="grid">
+        <div class="blends">
+            <a href="/CoffeeShop/coffeeLinks/drink3.html"><img src="images/FlatWhite.jpg" alt="drink3" class="coffeeimg"></a>
+            <h5>Flat White</h5>
+            <div class="star1">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <p>$4.25</p>
+            <button class="btn3">Add to Cart</button>
+        </div>
+        <div class="blends">
+            <a href="/CoffeeShop/coffeeLinks/drink4.html"><img src="images/Blackcoffee.jpg" alt="drink4" class="coffeeimg"></a>
+            <h5>Black Coffee</h5>
+            <div class="star1">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <p>$2.75</p>
+            <button class="btn3">Add to Cart</button>
+        </div>
+        <div class="blends">
+            <a href="/CoffeeShop/coffeeLinks/drink5.html"><img src="images/IcedLatte.jpg" alt="drink5" class="coffeeimg"></a>
+            <h5>Iced Latte</h5>
+            <div class="star1">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <p>$4.75</p>
+            <button class="btn3">Add to Cart</button>
+        </div>
+        <div class="blends">
+            <a href="/CoffeeShop/coffeeLinks/drink6.html"><img src="images/Cappuccino.jpg" alt="drink6" class="coffeeimg"></a>
+            <h5>Cappuccino</h5>
+            <div class="star1">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <p>$4.50</p>
+            <button class="btn3">Add to Cart</button>
+        </div>
+        <div class="blends">
+            <a href="/CoffeeShop/coffeeLinks/drink7.html"><img src="images/Mochacoffee.jpg" alt="drink7" class="coffeeimg"></a>
+            <h5>Mocha</h5>
+            <div class="star1">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <p>$4.95</p>
+            <button class="btn3">Add to Cart</button>
+        </div>
+        <div class="blends">
+            <a href="/CoffeeShop/coffeeLinks/drink8.html"><img src="images/MochaCookieCrumbleFrappuccino.jpg" alt="drink8" class="coffeeimg"></a>
+            <h5>Mocha Cookie Crumble Frappuccino</h5>
+            <div class="star1">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <p>$5.25</p>
+            <button class="btn3">Add to Cart</button>
+        </div>
+        <div class="blends">
+            <a href="/CoffeeShop/coffeeLinks/drink9.html"><img src="images/Caramel-Ribbon-Crunch-Frappuccino.jpg" alt="drink9" class="coffeeimg"></a>
+            <h5>Caramel Ribbon Crunch Frappuccino</h5>
+            <div class="star1">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <p>$5.25</p>
+            <button class="btn3">Add to Cart</button>
+        </div>
+        <div class="blends">
+            <a href="/CoffeeShop/coffeeLinks/drink10.html"><img src="images/Hotchocolate.jpg" alt="drink10" class="coffeeimg"></a>
+            <h5>Hot chocolate</h5>
+            <div class="star1">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <p>$3.25</p>
+            <button class="btn3">Add to Cart</button>
+        </div>
+        <div class="blends">
+            <a href="/CoffeeShop/coffeeLinks/drink11.html"><img src="images/Tea.jpg" alt="drink11" class="coffeeimg"></a>
+            <h5>Chai Tea</h5>
+            <div class="star1">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <p>$2.99</p>
+            <button class="btn3">Add to Cart</button>
+        </div>
+        <div class="blends">
+            <a href="/CoffeeShop/coffeeLinks/icecream.html"><img src="images/Coffeeicecream.jpg" alt="icecream" class="coffeeimg"></a>
+            <h5>Coffee icecream</h5>
+            <div class="star1">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <p>$3.99</p>
+            <button class="btn3">Add to Cart</button>
+        </div>
+        <div class="blends">
+            <a href="/CoffeeShop/coffeeLinks/cake.html"><img src="images/TiramisuCake.jpg" alt="cake" class="coffeeimg"></a>
+            <h5>Tiramisu Cake</h5>
+            <div class="star1">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <p>$4.25</p>
+            <button class="btn3">Add to Cart</button>
+        </div>
+        <div class="blends">
+            <a href="/CoffeeShop/coffeeLinks/croissant.html"><img src="images/Croissant.jpg" alt="croissant" class="coffeeimg"></a>
+            <h5>Croissant</h5>
+            <div class="star1">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <p>$2.50</p>
+            <button class="btn3">Add to Cart</button>
+        </div>
+    </div>
+</section>
+
+    <hr>
+    <section>
+        <div class="grid">
+            <div class="blends">
+                <a href="coffeeLinks/coffee1.html"><img src="images/coffee1.jpg" alt="coffee1" class="coffeeimg"></a>
+                <h5>StarBucks Whole Bean- Siren's Blend</h5>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>$24.99</p>
+                <button class="btn1">Add to Cart</button>
+            </div>
+            <div class="blends">
+                <a href="coffeeLinks/coffee2.html"><img src="images/coffee2.jpg" alt="coffee2" class="coffeeimg"></a> 
+                <h5>StarBucks Breakfast Blend Coffee, Medium Roast Ground Coffee</h5>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p>$24.99</p>
+                <button class="btn1">Add to Cart</button>
+            </div>
+            <div class="blends">
+                <a href="coffeeLinks/coffee3.html"><img src="images/coffee3.jpg" alt="coffee3" class="coffeeimg"></a>
+                <h5>Starbucks Colombia Ground Coffee Medium Roast</h5>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p>$24.99</p>
+                <button class="btn1">Add to Cart</button>
+            </div>
+            <div class="blends">
+                <a href="coffeeLinks/coffee4.html"> <img src="images/coffee4.jpg" alt="coffee4" class="coffeeimg"></a>
+                <h5>Starbucks Veranda Blend Ground Coffee</h5>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p>$24.99</p>
+                <button class="btn1">Add to Cart</button>
+            </div>
+            <div class="blends">
+                <a href="coffeeLinks/coffee5.html"> <img src="images/coffee5.jpg" alt="coffee5" class="coffeeimg"></a>
+                <h5>Starbucks House Blend Medium Roast Coffee</h5>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p>$24.99</p>
+                <button class="btn1">Add to Cart</button>
+            </div>
+            <div class="blends">
+                <a href="coffeeLinks/coffee6.html"> <img src="images/coffee6.jpg" alt="coffee6" class="coffeeimg"></a>
+                <h5>Starbucks Decaf Caffe Verona Dark Roast Ground Coffee</h5>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p>$24.99</p>
+                <button class="btn1">Add to Cart</button>
+            </div>
+            <div class="blends">
+                <a href="coffeeLinks/coffee7.html"> <img src="images/coffee7.jpg" alt="coffee7" class="coffeeimg"></a>
+                <h5>Starbucks Pike Place Roast</h5>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p>$24.99</p>
+                <button class="btn1">Add to Cart</button>
+            </div>
+            <div class="blends">
+                <a href="coffeeLinks/coffee8.html"> <img src="images/coffee8.jpg" alt="coffee8" class="coffeeimg"></a>
+                <h5>Starbucks Maple Pecan Flavored Ground Coffee</h5>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p>$24.99</p>
+                <button class="btn1">Add to Cart</button>
+            </div>
+            <div class="blends">
+                <a href="coffeeLinks/coffee9.html"> <img src="images/coffee9.jpg" alt="coffee9" class="coffeeimg"></a>
+                <h5>Starbucks Espresso Roast Ground Coffee</h5>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p>$24.99</p>
+                <button class="btn1">Add to Cart</button>
+            </div>
+            <div class="blends">
+                <a href="coffeeLinks/coffee10.html"> <img src="images/coffee10.jpg" alt="coffee10" class="coffeeimg"></a>
+                <h5>Starbucks Vanilla Flavored Ground Coffee</h5>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p>$24.99</p>
+                <button class="btn1">Add to Cart</button>
+            </div>
+            <div class="blends">
+                <a href="coffeeLinks/mocha.html"><img src="images/mocha.jpg" alt="mocha" class="coffeeimg"></a>
+                <h5>Starbucks Flavored Ground Coffee, Mocha</h5>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p>$24.99</p>
+                <button class="btn1">Add to Cart</button>
+            </div>
+            <!-- Blend -->
+            <div class="blends">
+                <a href="coffeeLinks/Blend.html"><img src="images/Blend.jpg" alt="blend" class="coffeeimg"></a>
+                <h5>Starbucks Verismo Veranda Blend Brewed Coffee Single Serve Verismo Pods</h5>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p>$24.99</p>
+                <button class="btn1">Add to Cart</button>
+            </div>
+            <div class="blends">
+                <a href="coffeeLinks/Blend1etra.html"><img src="images/Blend1extra.jpg" alt="blendextra" class="coffeeimg"></a>
+                <h5>Starbucks House Blend Coffee Verismo Pods</h5>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p>$24.99</p>
+                <button class="btn1">Add to Cart</button>
+            </div>
+            <div class="blends">
+                <a href="coffeeLinks/Blend1.html"><img src="images/Blend1.jpg" alt="blend1" class="coffeeimg"></a>
+                <h5>Starbucks Verismo Colombia Single-Origin Coffee Pods</h5>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p>$24.99</p>
+                <button class="btn1">Add to Cart</button>
+            </div>
+            <div class="blends">
+                <a href="coffeeLinks/Blend2.html"><img src="images/Blend2.jpg" alt="blend2" class="coffeeimg"></a>
+                <h5>Starbucks Verismo Caffe Latte Pack</h5>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p>$24.99</p>
+                <button class="btn1">Add to Cart</button>
+            </div>
+            <div class="blends">
+                <a href="coffeeLinks/Blend3.html"><img src="images/Blend3.jpg" alt="blend3" class="coffeeimg"></a>
+                <h5>Starbucks Blonde Espresso Roast Verismo Pods</h5>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p>$24.99</p>
+                <button class="btn1">Add to Cart</button>
+            </div>
+            <div class="blends">
+                <a href="coffeeLinks/Blend4.html"><img src="images/Blend4.jpg" alt="blend4" class="coffeeimg"></a>
+                <h5>Starbucks Blonde Espresso Roast by Nespresso</h5>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p>$24.99</p>
+                <button class="btn1">Add to Cart</button>
+            </div>
+            <div class="blends">
+                <a href="coffeeLinks/Blend5.html"><img src="images/Blend5.jpg" alt="blend5" class="coffeeimg"></a>
+                <h5>Starbucks French Roast K-Cup</h5>
+                <div class="star1">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p>$24.99</p>
+                <button class="btn1">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section>
+        <h2>What Our Customer Says</h2>
+        <div class="feedback">
+            <div class="person">
+                <img src="images/person1.jpg" alt="person1" class="feedbackimg">
+                <p>"Every cup of Bean Boutique coffee bursts with rich, nuanced flavors that highlight the care and expertise behind each blend. From fruity single-origin notes to deep, chocolatey roasts, there’s a perfect profile for every palate."</p>
+            </div>
+            <div class="person">
+                <img src="images/person2.jpg" alt="person2" class="feedbackimg">
+                <p>"Bean Boutique's beans are ethically sourced from top farms around the world and roasted locally in small batches. You get global excellence in every fresh, sustainable sip."</p>
+            </div>
+            <div class="person">
+                <img src="images/person3.jpg" alt="person3" class="feedbackimg">
+                <p>"Whether you're brewing with a French press or a top-of-the-line espresso machine, Bean Boutique’s coffee is designed to deliver professional-quality results with every method."</p>
+            </div>
+        </div>
+    </section>
+       <hr>     
+    <section class="video">
+        <h2>There is the video of how to make one of our drinks</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/An6LvWQuj_8?si=7yO3KPo7o7m5Ilbq" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+       </section>
+   
+       <footer>
+        <div id="google_translate_element"></div>
+            <div class="row">
+                <div class="ft_info col-l-4 col-m-4 col-s-11">
+                    <p class="footerText">USEFUL LINKS</p>
+                    <a href="">Blog</a>
+                    <a href="">Shop</a>
+                    <a href="">Services</a>
+                    <a href="">About</a>
+                    <a href="">Contact</a>
+                </div>
+                <div class="ft_info col-l-4 col-m-4 col-s-11">
+                    <p class="footerText">NEWSLETTER</p>
+                    <form class="sub_bar">
+                        <input type="text" placeholder="Your Email Address">
+                        <button type="submit">SUBSCRIBE NOW</button>
+                    </form>
+                </div>
+                <div class="ft_info col-l-4 col-m-4 col-s-11">
+                    <p class="footerText">CONTACT</p>
+                    <p class="footertext">1234 Main Street, City, Country, 56789</p>
+                    <p class="footertext">+1 (234) 567-8900</p>
+                    <p class="footertext">boutidue@gmail.com</p>
+                    <div class="icons">
+                        <a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://facebook.com"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+            </div>
+            </div>
+       
+    </footer>
+    <div class="last"><p class="footertext">&copy;2025 Bean Boutique Coffee Shop. </p></div>
+    <script src="assignment.js"></script>
+</body>
+</html>

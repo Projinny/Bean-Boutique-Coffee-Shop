@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bean Boutique Coffee Shop</title>
+    <link rel="stylesheet" href="assignment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <div class="head">
+        <nav class="navbar">
+            <div class="navdiv">
+                <img src="images/Coffeeshop.jpg" alt="coffee shop logo" class="img">
+                <div class="logo">
+                    <a href="#">Bean Boutique</a>
+                </div>
+                <div class="menu-toggle" id="mobile-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="Home.html" class="linknav">Home</a></li>
+                    <li>
+                        <a href="#"  class="linknav">Products</a>
+                        <ul class="dropdown">
+                            <li><a href="coffeeselection.html" class="linknav">Coffee selection</a></li>
+                            <li><a href="brewingequipment.html"  class="linknav">Brewing Equipment</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="shoppingcart.html"  class="linknav">Shopping Cart</a></li>
+                    <li><a href="Events-and-Workshops.html" class="linknav">Events</a></li>
+                     <li><a href="SpecialOffer.html"  class="linknav">Special Offers</a></li>
+                     <li><button class="linkbtn" id="popbtn" onclick="showlogin()">Login</button></li>
+                </ul>
+                
+            </div>
+            
+        </nav>
+    </div>
+    <section class="popup-container" id="login">
+        <div class="center" id="pop">
+            <button class="close-login" onclick="closelogin()">×</button>
+            <h1>Login</h1>
+            <form method="post">
+                <div class="txtfield">
+                    <input type="text" required>
+                    <span></span>
+                    <label>Username</label>
+                </div>
+                <div class="txtfield">
+                    <input type="password" required>
+                    <span></span>
+                    <label>Password</label>
+                </div>
+                <div class="pass">Forgot Password</div>
+                <input type="submit" value="Login">
+                <div class="signup">
+                    Not a member? <a href="#">Signup</a>
+                </div>
+            </form>
+        </div>
+    </section>
+   <div class="slide">
+        <div class="slideshow fade">
+            <img src="images/Slideshow.jpg" alt="slide1" class="slideimg">
+        </div>
+        <div class="slideshow fade">
+            <img src="images/Slideshow1.jpg" alt="slide2" class="slideimg">
+        </div>
+        <div class="slideshow fade">
+            <img src="images/Slideshow2.jpeg" alt="slide3" class="slideimg">
+        </div>
+        <div class="slideshow fade">
+            <img src="images/Slideshow3.jpg" alt="slide4" class="slideimg">
+        </div>   
+        <div class="slide-dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+   </div>
+ 
+   <section class="intro ">
+        <div>
+            <h1>Welcome to Bean Boutique Coffee Shop - Where Every Sip Tells a Story</h1>
+        <p>At Bean Boutique, we believe that coffee is more than just a drink—it’s an experience. Nestled in the heart of the community, our boutique coffee shop has been crafting rich, aromatic blends that bring people together. Whether you're a seasoned coffee connoisseur or just beginning your journey, we offer a selection of handpicked beans, expert brewing techniques, and a warm, inviting space to enjoy every cup.
+
+            From ethically sourced single-origin coffees to exclusive house blends, our passion for quality shines through in every sip. Explore our range of premium brewing equipment, join us for engaging workshops, and connect with fellow coffee lovers. Step into Bean Boutique and indulge in the perfect fusion of craftsmanship, flavor, and community. ☕✨
+        </p>
+        </div>
+        
+        <img src="images/coffeeslide3.jpg" alt="Intoimg" class="introimg">
+   </section>
+
+   <hr>
+      <section>
+        <h2>INFOGRAPHIC</h2>
+        <div class="graphic">
+            <img src="images/infographic.jpg" alt="infographic" class="infoimg">
+            <img src="images/infographic1.jpg" alt="infographic" class="infoimg">
+        </div>
+    </section>
+   <hr>
+
+   <section class="cafe-map">
+    
+    <div class="map">
+        <iframe class="map-left" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23245.713116553274!2d96.11282501796974!3d16.816311767387813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1ebcafe604d07%3A0x26451fa071576c95!2sKMD%20Mobile%20%26%20IT%20Sales%20%26%20Service%20Center%20(Mega%20Store)!5e0!3m2!1sen!2smm!4v1743842857095!5m2!1sen!2smm" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="map-text">
+            <h2>📍 Join Us at Our Location</h2>
+            <p>
+              Come visit us in person and experience the vibe! Whether you're dropping by for a service,
+              checking out our latest tech, or just want to say hi — we're always happy to see you.
+              Use the map on the left to find your way.
+            </p>
+          </div>
+    </div>
+       </section>
+       <hr>
+       <section class="video">
+        <h2>Cafe Vlog</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/1bn8cQ-9-KM?si=TbxdyYJc7Y_XtxI2" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+       </section>
+
+       <div class="discount-ad" id="discountAd">
+        <button class="close-btn" onclick="closeAd()">×</button>
+        <h4>🔥 Special Discount!</h4>
+        <p>Brew-tiful Deal! Get 20% OFF your favorite coffee — Today Only!</p>
+        <a href="register.html" class="discountbtn">Register Now</a>
+      </div>
+   <footer>
+    <div id="google_translate_element"></div>
+        <div class="row">
+            <div class="ft_info col-l-4 col-m-4 col-s-11">
+                <p class="footerText">USEFUL LINKS</p>
+                <a href="">Blog</a>
+                <a href="">Shop</a>
+                <a href="">Services</a>
+                <a href="">About</a>
+                <a href="">Contact</a>
+            </div>
+            <div class="ft_info col-l-4 col-m-4 col-s-11">
+                <p class="footerText">NEWSLETTER</p>
+                <form class="sub_bar">
+                    <input type="text" placeholder="Your Email Address">
+                    <button type="submit">SUBSCRIBE NOW</button>
+                </form>
+            </div>
+            <div class="ft_info col-l-4 col-m-4 col-s-11">
+                <p class="footerText">CONTACT</p>
+                <p class="footertext">1234 Main Street, City, Country, 56789</p>
+                <p class="footertext">+1 (234) 567-8900</p>
+                <p class="footertext">boutidue@gmail.com</p>
+                <div class="icons">
+                    <a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://facebook.com"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+                
+        </div>
+        </div>
+   
+</footer>
+<div class="last"><p class="footertext">&copy;2025 Bean Boutique Coffee Shop. </p></div>
+ 
+
+
+<script>
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+<script src="assignment.js"></script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</html>
